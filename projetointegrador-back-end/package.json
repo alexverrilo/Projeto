@@ -1,0 +1,26 @@
+{
+  "name": "back-end",
+  "version": "0.1.0",
+  "description": "exemplo de projeto backend.",
+  "main": "index.js",
+  "author": "EatPay",
+  "license": "MIT",
+  "scripts": {
+    "dev": " ts-node ./src/index.ts ",
+    "build": " tsc ",
+    "start": " node ./dist/index.js "
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
+    "@types/sqlite3": "^3.1.8",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "sqlite3": "^5.0.2"
+  }
+}

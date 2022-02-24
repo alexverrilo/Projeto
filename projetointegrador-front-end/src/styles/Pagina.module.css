@@ -1,0 +1,6 @@
+.root > header {
+    background: black;
+    display:flex;
+    justify-content: space-between;
+    
+}
