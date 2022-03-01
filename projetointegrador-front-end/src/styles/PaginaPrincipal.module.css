@@ -1,24 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 .root header{
     text-align: center;
 }
 .body {
+    justify-content: center;
     background-color: transparent;
     text-align: center;
     border-style: solid;
-    border: 2px solid rgb(46, 238, 46);
     border-radius: 1.0em;
-    padding: 0.3em 0.5em;
-    color: rgb(46, 238, 46);
     width: 350px;
-    height: 400px;  
+    height: 400px;
     margin: auto;  
 }
-.root h2 {
+.text {
+    font-family: 'Indie Flower';
     color:black;
-    text-shadow: 2px 2px rgb(36, 195, 36);
-    text-align: center
+    /* text-shadow: 2px 2px rgb(36, 195, 36); */
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
 .p {
     background-color: transparent;
     color: rgb(36, 195, 36)
+}
+.f{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    font-size: 10px;
+    font-family: 'Indie Flower';
+}
+.loja{
+    margin: 10px;
+    max-width: 80px;
+    width: 100%;
+}
+.logo{
+    margin: 10px;
+    max-width: 300px;
+    width: 100%;
 }

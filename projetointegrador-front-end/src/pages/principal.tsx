@@ -23,19 +23,23 @@ const PaginaPrincipal: FunctionComponent = () => {
         <Pagina>
             <div className={styles.root}>
                 <header>
-                    <h1>
-                        <img src="/content/logo.png" alt=""/> 
-                    </h1>
-                    <h2>
+                    <img className={styles.logo} src="/content/logo.png" alt="Logo da Eat Pay"/>
+                    <p className={styles.text}>
                         Ja pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?<br/>
                         Podendo reservar sua mesa e pagar como quiser!
-                    </h2>
+                    </p>
                     <div>
-                        <h2>Bares e Restaurantes</h2>
-                        {/* <p>Saiba aqui quais são os BARES e RESTAURANTES que ja aderiram a EatPay. Uma forma nova de pagamento para facilitar a sua diversao.</p> */}
-                        <NavLink to="/bares-restaurantes"> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay.<br/>
-                        Uma forma nova de pagamento para facilitar a sua diversao. </NavLink>
-                        <h4 className={styles.p}> Nos da EatPay viemos para mudar o conceito de pagamentos facilitando você nosso cliente, uma proposta nova, você parcelar seus pagamentos naquele momento que você tem a vontade de sair para comer fora ou mesmo tomar uma com os amigos, porem o orcamento esta curto.
+                        <div>
+                            {/* <p>Saiba aqui quais são os BARES e RESTAURANTES que ja aderiram a EatPay. Uma forma nova de pagamento para facilitar a sua diversao.</p> */}
+                            <NavLink to="/bares-restaurantes" className={styles.text}> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay.<br/>
+                            Uma forma nova de pagamento para facilitar a sua diversao. </NavLink>
+                        </div>
+                        <div className={styles.f}>
+                            <h2>Baixe nosso App!</h2>
+                            <img className={styles.loja} src="/content/lojas.png" alt="Icones das lojas virtuais"/> 
+                        </div>
+                        <h4 className={styles.p}> Nos da EatPay viemos para mudar o conceito de pagamentos, facilitando para você,
+                        podendo parcelar seus pagamentos naquele momento que você tem a vontade de sair para comer fora ou mesmo tomar uma com os amigos, porem o orçamento esta curto.
                         Sim, isso mesmo iremos parcelar seus pedidos, mas não é apenas essa vantagem,
                         clique aqui e veja todas as nossas funcionalidades.</h4>
                     </div>
