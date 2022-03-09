@@ -2,9 +2,19 @@
     background: black;
     display:flex;
     justify-content: space-between;
-    
 }
-img {
-    margin-left: 5px;
-    margin-top: 5px;
+.logo {
+    display: flex;
+    justify-content: center;
 }
+.login{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .login form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }

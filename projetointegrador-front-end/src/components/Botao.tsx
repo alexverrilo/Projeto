@@ -1,11 +1,16 @@
 import { FunctionComponent } from "react"
 import styles from '../styles/Botao.module.css'
 
-const Botao: FunctionComponent= ({children}) => {
+type Props = {
+    onClick?: () => void
+}
+
+const Botao: FunctionComponent<Props> = ({onClick, children}) => {
     return (
         <> 
-           <button className={`${styles.btn} ${styles.first}`}>{children}</button>
+           <button onClick={ onClick } className={`${styles.btn} ${styles.first}`}>{children}</button>
         </> 
     )
 }
+
 export default Botao

@@ -1,5 +1,4 @@
 import { FunctionComponent, useState } from "react"
-import Pagina from '../components/Pagina'
 import Botao from "./Botao"
 
 type Props = {
@@ -23,9 +22,7 @@ const ComponenteParceiro: FunctionComponent<Props> = ({id, nome, urlImg, local, 
             <img src={ urlImg } alt={`Foto da fachada do ${nome}`} />
             <p>{local}</p>
             <p>{estado}</p>
-            <div onClick={botaobaresclicado}>
-            <Botao>MAPS</Botao>
-            </div>
+            <Botao onClick={botaobaresclicado}>MAPS</Botao>
             {/* <button onClick={botaobaresclicado} className={`${styles.btn} ${styles.first} `}>MAPS</button> */}
             {
                 (ativado) && <iframe src={ urlGoogleMaps } width="200" height="300" style={{border:0}} loading="lazy"></iframe>
