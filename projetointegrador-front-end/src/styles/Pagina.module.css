@@ -21,3 +21,20 @@
     flex-direction: column;
     margin: 5px;
   }
+  .click {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .click form{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  p {
+    font-size: 15px;
+  }

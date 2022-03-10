@@ -1,7 +1,7 @@
 .btn {
     display:block;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -15,8 +15,25 @@
     line-height: 1;
     padding: 0.3em 1.0em;
     text-align: center;
-    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin: 5px;
+    font-size: 10px;
+    margin: auto;
+  }
+  .first {
+ 
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .btn:hover, .btn:focus {
+    color: rgb(22, 114, 3);
+    outline: 0;
+  }
+  
+  .first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 10px 10px rgb(46, 238, 46) inset;
   }
