@@ -25,14 +25,16 @@ const PaginaPrincipal: FunctionComponent = () => {
                 <header>
                     <img className={styles.logo} src="/content/logo.png" alt="Logo da Eat Pay"/>
                     <p className={styles.text}>
-                        Ja pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?<br/>
-                        Podendo reservar sua mesa e pagar como quiser!
+                        Já pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?<br/>
+                        Podendo reservar sua mesa e pagar como quiser!<br/>
+                        EatPay é uma forma nova de pagamento para facilitar a sua diversao.
+                        <button className={styles.btn}>Clique e saiba mais!</button>
                     </p>
                     <div>
                         <div>
                             {/* <p>Saiba aqui quais são os BARES e RESTAURANTES que ja aderiram a EatPay. Uma forma nova de pagamento para facilitar a sua diversao.</p> */}
-                            <NavLink to="/bares-restaurantes" className={styles.text}> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay.<br/>
-                            Uma forma nova de pagamento para facilitar a sua diversao. </NavLink>
+                            <NavLink to="/bares-restaurantes" className={styles.text}> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay. 
+                            </NavLink>
                         </div>
                         <div className={styles.f}>
                             <h2>Baixe nosso App!</h2>

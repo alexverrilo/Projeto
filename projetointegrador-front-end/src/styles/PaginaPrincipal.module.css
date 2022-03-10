@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .root header{
-    text-align: center;
+    text-align: center
+;
 }
 .body {
     justify-content: center;
@@ -13,11 +14,14 @@
     margin: auto;  
 }
 .text {
-    font-family: 'Indie Flower';
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+    font-family: 'Staatliches';
     color:black;
     /* text-shadow: 2px 2px rgb(36, 195, 36); */
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 30px;
     font-weight: bold;
 }
 .p {
