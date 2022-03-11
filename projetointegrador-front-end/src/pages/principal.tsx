@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react'
 import { NavLink } from 'react-router-dom'
 import Botao from '../components/Botao'
+import Botao2 from '../components/Botao2'
+import BotaoClique from '../components/Click'
 import Pagina from '../components/Pagina'
 import styles from '../styles/PaginaPrincipal.module.css'
 
@@ -25,10 +27,8 @@ const PaginaPrincipal: FunctionComponent = () => {
                 <header>
                     <img className={styles.logo} src="/content/logo.png" alt="Logo da Eat Pay"/>
                     <p className={styles.text}>
-                        Já pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?<br/>
-                        Podendo reservar sua mesa e pagar como quiser!<br/>
-                        EatPay é uma forma nova de pagamento para facilitar a sua diversao.
-                        <button className={styles.btn}>Clique e saiba mais!</button>
+                        Já pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?
+                        <BotaoClique></BotaoClique>
                     </p>
                     <div>
                         <div>

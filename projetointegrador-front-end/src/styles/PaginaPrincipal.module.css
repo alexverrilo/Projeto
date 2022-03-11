@@ -14,13 +14,11 @@
     margin: auto;  
 }
 .text {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10px;
+    margin: auto;
+    flex-flow: inherit;
     font-family: 'Staatliches';
     color:black;
     /* text-shadow: 2px 2px rgb(36, 195, 36); */
-    text-align: left;
     font-size: 30px;
     font-weight: bold;
 }
