@@ -45,6 +45,7 @@ const PaginaBaresRestaurantes: FunctionComponent = () => {
                 <div className={styles.parceiros}>
                 {        
                  parceiros.map((parceiro) => {
+            
                         return (
                             <ComponenteParceiro
                             id={parceiro.id}

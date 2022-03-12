@@ -25,7 +25,7 @@ const ComponenteParceiro: FunctionComponent<Props> = ({id, nome, urlImg, local, 
             <Botao onClick={botaobaresclicado}>MAPS</Botao>
             {/* <button onClick={botaobaresclicado} className={`${styles.btn} ${styles.first} `}>MAPS</button> */}
             {
-                (ativado) && <iframe src={ urlGoogleMaps } width="200" height="300" style={{border:0}} loading="lazy"></iframe>
+               (ativado) && <iframe src={ urlGoogleMaps } width="200" height="300" style={{border:0}} loading="lazy"></iframe>
             }
         </div>
         )

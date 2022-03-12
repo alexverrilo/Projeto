@@ -1,8 +1,8 @@
 import express from 'express'
 import cors from 'cors'
-import Categoria from './models/categoria'
 import routerCategorias from './routers/categorias'
 import routerParceiros from './routers/Parceiros'
+import routerParceiroCategoria from './routers/ParceiroCategoria'
 // Porta do servidor
 const PORT = process.env.PORT || 4000
 
@@ -25,8 +25,12 @@ app.get('/', (req, res) => {
 //Endpoint para listar todas as categorias
 app.use('/', routerCategorias)
 
-//Endpoint para listar todas as categorias
+//Endpoint para listar todas as parceiros
 app.use('/', routerParceiros)
+
+//Endpoint para listar todas as parceiros
+app.use('/', routerParceiroCategoria)
+
 
 // Resposta padrão para quaisquer outras requisições:
 app.use((req, res) => {
@@ -37,3 +41,5 @@ app.use((req, res) => {
 app.listen(PORT, () => {
 	console.log(`Servidor rodando com sucesso ${HOSTNAME}:${PORT}`)
 })
+
+

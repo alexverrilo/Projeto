@@ -12,7 +12,17 @@ const SQL_CATEGORIAS_CREATE = `
 	const SQL_Parceiros_CREATE = `
 	CREATE TABLE Parceiros (
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
-		nome TEXT
+		nome TEXT 
+		urlmg TEXT 
+		local TEXT 
+		estado TEXT 
+		urlgoogleMaps TEXT 
+		
+	)`
+
+	const SQL_ParceiroCategoria_CREATE = `
+	CREATE TABLE ParceiroCategoria (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		
 	)`
 
@@ -41,6 +51,14 @@ const database = new sqlite3.Database(DBSOURCE, (err) => {
 			}
 		})
 
+		database.run(SQL_ParceiroCategoria_CREATE, (err) => {
+			
+			if (err) {
+				// Possivelmente a tabela já foi criada
+			} else {
+				console.log('TabelaParceiroCategoria criada com sucesso.')
+			}
+		})
 	}
 })
 
