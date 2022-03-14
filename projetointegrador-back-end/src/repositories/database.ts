@@ -22,8 +22,10 @@ const SQL_CATEGORIAS_CREATE = `
 
 	const SQL_ParceiroCategoria_CREATE = `
 	CREATE TABLE ParceiroCategoria (
-		id INTEGER PRIMARY KEY AUTOINCREMENT,
-		
+		idParceiros INTEGER NOT NULL,
+		idCategorias INTEGER NOT NULL,
+		FOREIGN KEY (idParceiros) REFERENCES Parceiros(id),
+		FOREIGN KEY (idCategorias) REFERENCES categorias(id)
 	)`
 
 const database = new sqlite3.Database(DBSOURCE, (err) => {
@@ -54,9 +56,10 @@ const database = new sqlite3.Database(DBSOURCE, (err) => {
 		database.run(SQL_ParceiroCategoria_CREATE, (err) => {
 			
 			if (err) {
+				console.error(err.message)
 				// Possivelmente a tabela já foi criada
 			} else {
-				console.log('TabelaParceiroCategoria criada com sucesso.')
+				console.log('Tabela ParceiroCategoria criada com sucesso.')
 			}
 		})
 	}

@@ -1,5 +1,5 @@
 import express from "express"
-import ParceiroCategoria from "../models/parceiro-categoria"
+import ParceiroCategoria from "../models/parceiroCategoria"
 import repositoryParceiroCategoria from "../repositories/ParceiroCategoria"
 
 

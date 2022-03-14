@@ -17,7 +17,6 @@ const repositoryParceiros = {
 
             callback(rows)
         }
-
         database.all(sql,allcallback) 
     },
 

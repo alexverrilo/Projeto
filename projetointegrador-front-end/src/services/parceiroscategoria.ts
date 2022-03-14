@@ -1,30 +1,20 @@
-const ParceiroCategoria = {
-    lerTodos: () => {
-        return [
-            {
-                idParceiros:1,
-                idCategorias:1,
-            },{
-                idParceiros:2,
-                idCategorias:1,
-            },
-            {
-                idParceiros:3,
-                idCategorias:1,
-            },
-            {
-                idParceiros:4,
-                idCategorias:2,
-            },
-            {
-                idParceiros:5,
-                idCategorias:2,
-            },
-           { idParceiros:6,
-            idCategorias:2,
-           },
-        ]
-    }
+import axios from "axios"
+import ParceiroCategoria from "../models/parceiro-categoria"
 
-}
-export default ParceiroCategoria
+type lerParceiroCategoriaCallback = (ParceiroCategoria: ParceiroCategoria[]) => void
+
+const servicoParceiroCategoria = {
+     lerTodos: (callback: lerParceiroCategoriaCallback) => {
+         axios.get<ParceiroCategoria[]>(' http://localhost:4000/ParceiroCategoria')
+         .then((res) => {
+             callback(res.data)
+         })
+         .catch((error) => {
+             console.log(error)
+         })
+       
+     }
+         
+    
+ }
+ export default servicoParceiroCategoria

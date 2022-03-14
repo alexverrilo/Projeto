@@ -1,17 +1,13 @@
-import ParceiroCategoria from "../models/parceiro-categoria";
 import database from "./database";
+import ParceiroCategoria from "../models/parceiroCategoria";
 
 
-const repositoryParceiroCategoria = {lerTodas: (callback: (ParceiroCategoria: ParceiroCategoria[]) => void  ) => {
+const repositoryParceiroCategoria = {
+    lerTodas: (callback: (ParceiroCategoria: ParceiroCategoria[]) => void  ) => {
 
     const sql = 'SELECT * FROM ParceiroCategoria'
 
     const allcallback = (err: Error | null, rows: ParceiroCategoria[]) => {
-        console.log('repositoryParceiroCategoria.lerTodas:')
-        rows.forEach(ParceiroCategoria => {
-            console.log(ParceiroCategoria)
-        });
-
         callback(rows)
     }
 
