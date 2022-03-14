@@ -2,9 +2,9 @@ import { FunctionComponent, useEffect, useState } from 'react'
 import Pagina from '../components/Pagina'
 import ComponenteParceiro from '../components/Parceiro'
 import Categoria from '../models/categoria'
-import Parceiro from '../models/parceiro'
+import Parceiro from '../models/Parceiros'
 import servicoCategoria from '../services/categoria'
-import servicoParceiros from '../services/Parceiros'
+import servicoParceiros from '../services/parceiros'
 import styles from '../styles/PaginaBaresRestaurantes.module.css'
 
 const PaginaBaresRestaurantes: FunctionComponent = () => {
@@ -14,11 +14,9 @@ const PaginaBaresRestaurantes: FunctionComponent = () => {
 
 
     useEffect(() => {
-
         servicoCategoria.lerTodos((categorias) => {
             setCategorias(categorias)
         })
-
         servicoParceiros.lerTodos((parceiros)=> {
             setParceiros(parceiros)
         }) 
@@ -39,9 +37,6 @@ const PaginaBaresRestaurantes: FunctionComponent = () => {
                         )
                     })
                 }
-
-
-
                 <div className={styles.parceiros}>
                 {        
                  parceiros.map((parceiro) => {
@@ -63,5 +58,4 @@ const PaginaBaresRestaurantes: FunctionComponent = () => {
         </Pagina>
     )
 }
-
 export default PaginaBaresRestaurantes
