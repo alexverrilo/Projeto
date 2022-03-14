@@ -21,15 +21,11 @@ const SQL_CATEGORIAS_CREATE = `
 	)`
 	const SQL_ParceiroCategoria_CREATE = `
 	CREATE TABLE ParceiroCategoria (
-<<<<<<< HEAD
 		idParceiros INTEGER NOT NULL,
 		idCategorias INTEGER NOT NULL,
 		FOREIGN KEY (idParceiros) REFERENCES Parceiros(id),
 		FOREIGN KEY (idCategorias) REFERENCES categorias(id)
-=======
-	
-		
->>>>>>> 888704399d1e7c0bb5190facdb0f30c422a6cb04
+
 	)`
 
 
