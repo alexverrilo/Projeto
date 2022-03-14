@@ -1,5 +1,5 @@
 import express from "express"
-import ParceiroCategoria from "../models/parceiro-categoria"
+import ParceiroCategoria from "../models/ParceiroCategoria"
 import repositoryParceiroCategoria from "../repositories/ParceiroCategoria"
 
 
@@ -10,8 +10,6 @@ const routerParceiroCategoria = express.Router()
         }
         repositoryParceiroCategoria.lerTodas (lerTodascallback)
     })
-
-
 
     routerParceiroCategoria.get('/ParceiroCategoria/:id', (req, res) => {
     const id: number = +req.params.id

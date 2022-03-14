@@ -21,6 +21,8 @@ app.use(cors({
 app.get('/', (req, res) => {
 	res.send('EatPay')
 })
+//Endpoint para listar todas as parceiros
+app.use('/', routerParceiroCategoria)
 
 //Endpoint para listar todas as categorias
 app.use('/', routerCategorias)
@@ -28,8 +30,6 @@ app.use('/', routerCategorias)
 //Endpoint para listar todas as parceiros
 app.use('/', routerParceiros)
 
-//Endpoint para listar todas as parceiros
-app.use('/', routerParceiroCategoria)
 
 
 // Resposta padrão para quaisquer outras requisições:

@@ -19,12 +19,14 @@ const SQL_CATEGORIAS_CREATE = `
 		urlgoogleMaps TEXT 
 		
 	)`
-
 	const SQL_ParceiroCategoria_CREATE = `
 	CREATE TABLE ParceiroCategoria (
-		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		idCategorias INTEGER PRIMARY KEY AUTOINCREMENT,
+		idParceiros INTEGER PRIMARY KEY AUTOINCREMENT
 		
 	)`
+
+
 
 const database = new sqlite3.Database(DBSOURCE, (err) => {
 	if (err) {

@@ -3,9 +3,7 @@ import Parceiros from "../models/parceiros"
 
 
 
-const repositoryParceiros = {
-
-    lerTodas: (callback: (Parceiros: Parceiros[]) => void  ) => {
+const repositoryParceiros = {lerTodas: (callback: (Parceiros: Parceiros[]) => void  ) => {
 
         const sql = 'SELECT * FROM Parceiros'
 
