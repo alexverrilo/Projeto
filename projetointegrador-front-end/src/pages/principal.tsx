@@ -33,7 +33,7 @@ const PaginaPrincipal: FunctionComponent = () => {
                     <div>
                         <div>
                             {/* <p>Saiba aqui quais são os BARES e RESTAURANTES que ja aderiram a EatPay. Uma forma nova de pagamento para facilitar a sua diversao.</p> */}
-                            <NavLink to="/bares-restaurantes" className={styles.text}> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay. 
+                            <NavLink to="/bares-restaurantes" className={styles.text2}> Clique aqui e saiba quais são os BARES e RESTAURANTES que ja aderiram a EatPay. 
                             </NavLink>
                         </div>
                         <div className={styles.f}>
@@ -56,6 +56,12 @@ const PaginaPrincipal: FunctionComponent = () => {
                     <p> <input onChange={ inputChange } placeholder="Cidade"/></p>
                     <p> <input onChange={ inputChange } placeholder="Assunto"/></p>
                     <Botao>ENVIAR</Botao>
+                </div>
+                <div className={styles.images}>
+                <img src="/content/whatsapp.png" alt="" width="50" height="50"/>
+                <img src="/content/face.png" alt=""width="50" height="50"/>
+                <img src="/content/insta.png" alt=""width="55" height="55"/>
+                <img src="/content/localizacao.png" alt=""width="30" height="40"/>
                 </div>
             </div>
         </Pagina>

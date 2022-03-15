@@ -27,7 +27,9 @@ const BotaoClique : FunctionComponent = () => {
                 
                 <p>
                     EatPay é uma forma nova de pagamento para facilitar a sua diversao.<br/>
-                    Você pode reservar sua mesa e pagar como quiser!
+                    Você pode reservar sua mesa.<br/>
+                    Escolher a melhor forma de pagamento.<br/>
+                    verificar o cardápio, fazer seu pedido e assim que consumir você pode ir para casa sem se preocupar.
                     {
                         (! fechado) && <Botao onClick= { botaoFecharClicado }>X</Botao>
                     }

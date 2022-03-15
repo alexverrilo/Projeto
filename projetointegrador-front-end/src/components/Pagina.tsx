@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react"
 import { NavLink } from "react-router-dom"
-import Botao from "./Botao"
 import styles from '../styles/Pagina.module.css'
 import Login from "./Login"
 
@@ -17,8 +16,8 @@ const Pagina : FunctionComponent= ({children}) => {
             <main> 
                 { children }
             </main>
-            <footer>
-                <p>fale com</p>
+            <footer className={styles.footer}>
+                <p>Contato</p>
             </footer>
         </div> 
     )
