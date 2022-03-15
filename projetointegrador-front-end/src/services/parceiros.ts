@@ -6,6 +6,7 @@ import Parceiros from "../models/Parceiros"
    const servicoParceiros = {
         lerTodos: (callback: lerParceirosCallback) => {
             axios.get<Parceiros[]>(' http://localhost:4000/Parceiros')
+            .then(res => callback(res.data))
           
         }
             
