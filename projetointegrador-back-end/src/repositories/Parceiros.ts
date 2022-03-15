@@ -15,7 +15,6 @@ const repositoryParceiros = {lerTodas: (callback: (Parceiros: Parceiros[]) => vo
 
             callback(rows)
         }
-
         database.all(sql,allcallback) 
     },
 

@@ -1,15 +1,20 @@
 import axios from "axios"
 import ParceiroCategoria from "../models/ParceiroCategoria"
 
+type lerParceiroCategoriaCallback = (ParceiroCategoria: ParceiroCategoria[]) => void
 
-    type lerParceiroCategoriaCallback = (ParceiroCategoria: ParceiroCategoria[]) => void
-
-    const servicoParceiroCategoria = {
-         lerTodos: (callback: lerParceiroCategoriaCallback) => {
-             axios.get<ParceiroCategoria[]>(' http://localhost:4000/ParceiroCategoria') 
-         }
-        }
-export default ParceiroCategoria
-
-
-
+const servicoParceiroCategoria = {
+     lerTodos: (callback: lerParceiroCategoriaCallback) => {
+         axios.get<ParceiroCategoria[]>(' http://localhost:4000/ParceiroCategoria')
+         .then((res) => {
+             callback(res.data)
+         })
+         .catch((error) => {
+             console.log(error)
+         })
+       
+     }
+         
+    
+ }
+ export default servicoParceiroCategoria
