@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
 .root{
   background-image: url(../../public/content/fundo.png);
   background-size: cover;
 }
+
 .root h1 {
-    color: rgb(36, 195, 36);
-    text-shadow: 2px 2px black;
+    color: black;
     text-align: center;
+    font-family: 'Staatliches';
     margin: auto;
 }
+
 .root h2 {
-    color:black;
-    text-shadow: 2px 2px rgb(36, 195, 36);;
-    text-align: center
+    color:rgb(36, 195, 36);
+    font-family: 'Staatliches';
+    text-align: center;
+    margin: 50px;
 }
+
 .parceiros  {
-    display: flex; 
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center; 
+    justify-content:center;
     display: flex;
     gap: 80px 80px; /* row-gap column gap */
+    
+
 }
