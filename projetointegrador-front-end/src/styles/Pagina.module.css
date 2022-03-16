@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .root > header {
     background: black;
     display:flex;
@@ -43,5 +44,9 @@
     background: black;
 }
 .footer p{
+  background-color: transparent;
+  font-size: 30px;
   color: white;
+  margin: 0px;
+  font-family: 'Staatliches';
 }
