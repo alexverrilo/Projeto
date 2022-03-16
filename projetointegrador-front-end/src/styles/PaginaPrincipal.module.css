@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .root header{
-    text-align: center
-;
+    text-align: center;
+}
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.container h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Staatliches';
+    margin: 50px;
+    padding: 0px;
+}
+.container img{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Staatliches';
+    margin: 50px;
+    padding: 0px;
 }
 .body {
-    justify-content: center;
-    background-color: transparent;
+    font-weight: bold;
     text-align: center;
     border-style: solid;
     border-radius: 1.0em;
     width: 350px;
     height: 400px;
-    margin: auto;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 .text {
     margin: 50px;
@@ -24,8 +43,9 @@
     font-weight: bold;
 }
 .text2 {
-    margin: auto;
-    flex: auto;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Staatliches';
     color:black;
     /* text-shadow: 2px 2px rgb(36, 195, 36); */
@@ -33,6 +53,10 @@
     font-weight: bold;
 }
 .p {
+    font-family: 'Staatliches';
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: transparent;
     color: rgb(36, 195, 36)
 }
@@ -47,6 +71,9 @@
     font-size: 10px;
     font-family: 'Indie Flower';
 }
+    .f h2{
+        font-family: 'Staatliches';
+    }
 .loja{
     margin: 10px;
     max-width: 80px;
@@ -58,10 +85,8 @@
     width: 100%;
 }
 .images{
-    
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; 
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
+    justify-content: space-evenly;
 }
