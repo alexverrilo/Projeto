@@ -63,9 +63,11 @@ const PaginaPrincipal: FunctionComponent = () => {
                             <Botao>ENVIAR</Botao>
                         </div>
                     </div>
-                    <div className={styles.f}>
-                        <h2>Baixe nosso App!</h2>
-                        <img className={styles.loja} src="/content/lojas.png" alt="Icones das lojas virtuais"/> 
+                    <div className={styles.box}>
+                        <div className={styles.f}>
+                            <h2>Baixe nosso App!</h2>
+                            <img className={styles.loja} src="/content/lojas.png" alt="Icones das lojas virtuais"/> 
+                        </div>
                     </div>
                     <div className={styles.images}>
                         <img src="/content/whatsapp.png" alt="" width="50" height="50"/>

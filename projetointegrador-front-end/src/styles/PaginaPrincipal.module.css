@@ -81,13 +81,15 @@ section {
     background-color: transparent;
     color: rgb(40, 224, 40)
 }
-.f{
-    justify-content: center;
-    align-items: center;
+.box{
+    width: max-content;
+    height: max-content;
     display: flex;
-    height: 60px;
-    width: 300px;
-    padding: 10px;
+    position: relative;
+    left: 25%;
+}
+.f{
+    display: flex;
     font-size: 10px;
     font-family: 'Indie Flower';
 }
