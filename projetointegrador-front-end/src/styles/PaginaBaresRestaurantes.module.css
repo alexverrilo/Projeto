@@ -6,6 +6,7 @@
 }
 
 .root h1 {
+    font-size: 40px;
     color: black;
     text-align: center;
     font-family: 'Staatliches';
@@ -16,7 +17,8 @@
     color:rgb(36, 195, 36);
     font-family: 'Staatliches';
     text-align: center;
-    margin: 50px;
+    margin-top:  100px ;
+    font-size: 40px;
 }
 
 .parceiros  {
