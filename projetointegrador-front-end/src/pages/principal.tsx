@@ -35,7 +35,7 @@ const PaginaPrincipal: FunctionComponent = () => {
                     </h1>
                         <div>
                             <div className={styles.container}>
-                                <img src="/content/bar.png" alt="Icones das lojas virtuais"/>
+                                <img src="/content/bar.png" alt=""/>
                                 {/* <p>Saiba aqui quais são os BARES e RESTAURANTES que ja aderiram a EatPay. Uma forma nova de pagamento para facilitar a sua diversao.</p> */}
                                 <NavLink to="/bares-restaurantes" className={styles.text2}> Clique aqui e saiba quais são os BARES e 
                                 RESTAURANTES que ja aderiram a EatPay. </NavLink>
