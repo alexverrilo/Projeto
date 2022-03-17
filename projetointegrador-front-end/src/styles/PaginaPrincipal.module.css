@@ -49,6 +49,15 @@ section {
     font-size: 40px;
     font-weight: bold;
 }
+    .text p{
+        margin: 20px;
+        flex-flow: inherit;
+        font-family: 'Staatliches';
+        color:black;
+        /* text-shadow: 2px 2px rgb(36, 195, 36); */
+        font-size: 20px;
+        font-weight: bold;
+    }
 .text2 {
     padding-bottom: 20px;
     justify-content: space-evenly;
@@ -57,7 +66,7 @@ section {
     font-family: 'Staatliches';
     color:black;
     /* text-shadow: 2px 2px rgb(36, 195, 36); */
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 .p {
