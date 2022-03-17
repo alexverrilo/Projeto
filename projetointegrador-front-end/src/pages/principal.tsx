@@ -53,8 +53,8 @@ const PaginaPrincipal: FunctionComponent = () => {
                             clique aqui e veja todas as nossas funcionalidades.
                         </h3>
                         <div className={styles.body}> 
-                            <p>Preencha nosso formulário de interesse,<br/>
-                            que entraremos em contato através do nosso setor comercial.</p>
+                            <h3>Preencha nosso formulário de interesse,<br/>
+                            que entraremos em contato através do nosso setor comercial.</h3>
                             <p> <input onChange={ inputChange } placeholder="Nome" /></p>
                             <p> <input onChange={ inputChange } placeholder="E-Mail"/></p>
                             <p> <input onChange={ inputChange } placeholder="Telefone para contato"/></p>
