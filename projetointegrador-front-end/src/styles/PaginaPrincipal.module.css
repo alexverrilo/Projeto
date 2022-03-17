@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-.root header{
+header{
     text-align: center;
+}
+section {
+    text-align: center;
+    border-bottom: 1px solid black;
 }
 .container{
     flex-direction: row;
@@ -12,7 +16,7 @@
 }
 .container h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Staatliches';
     margin: 50px;
     padding: 0px;
@@ -21,28 +25,32 @@
     text-align: center;
     font-size: 30px;
     font-family: 'Staatliches';
-    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 .body {
+    justify-content: center;
+    margin: 20px;
     font-weight: bold;
     text-align: center;
     border-style: solid;
     border-radius: 1.0em;
     width: 350px;
-    height: 400px;
+    height: 350px;
     flex-wrap: wrap;
 }
 .text {
-    margin: 50px;
+    margin: 20px;
     flex-flow: inherit;
     font-family: 'Staatliches';
     color:black;
     /* text-shadow: 2px 2px rgb(36, 195, 36); */
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 .text2 {
+    padding-bottom: 20px;
     justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
@@ -53,12 +61,13 @@
     font-weight: bold;
 }
 .p {
+    display: flex;
+    justify-content: center;
+    /* text-shadow: 2px 2px rgb(0, 0, 0);  */
     font-family: 'Staatliches';
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 40px;
     background-color: transparent;
-    color: rgb(36, 195, 36)
+    color: rgb(40, 224, 40)
 }
 .f{
     justify-content: center;
@@ -67,18 +76,17 @@
     height: 60px;
     width: 300px;
     padding: 10px;
-    margin: auto;
     font-size: 10px;
     font-family: 'Indie Flower';
 }
     .f h2{
         font-family: 'Staatliches';
     }
-.loja{
-    margin: 10px;
-    max-width: 80px;
-    width: 100%;
-}
+    .f img{
+        margin-left: 30px;
+        max-width: 80px;
+        width: 100%;
+    }   
 .logo{
     margin: 30px;
     max-width: 300px;
