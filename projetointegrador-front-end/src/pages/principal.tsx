@@ -27,12 +27,13 @@ const PaginaPrincipal: FunctionComponent = () => {
                 </header>
                 <section>
                     <h1 className={styles.text}>Já pensou em ir no seu restaurante preferido sem ter que ficar esperando em filas?
-                        <p>EatPay é uma forma nova de pagamento para facilitar a sua diversao.<br/>
-                        Você pode reservar sua mesa.<br/>
-                        Escolher a melhor forma de pagamento.<br/>
-                        verificar o cardápio, fazer seu pedido e assim que consumir você pode ir para casa sem se preocupar.
-                        </p>
+                        <h3>EatPay é uma forma nova de pagamento para facilitar a sua diversao.<br/>
+                            Você pode reservar sua mesa.<br/>
+                            Escolher a melhor forma de pagamento.<br/>
+                            verificar o cardápio, fazer seu pedido e assim que consumir você pode ir para casa sem se preocupar.
+                        </h3>                    
                     </h1>
+                    
                         <div>
                             <div className={styles.container}>
                                 <img src="/content/bar.png" alt=""/>

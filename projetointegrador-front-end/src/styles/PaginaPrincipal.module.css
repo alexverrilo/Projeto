@@ -49,7 +49,6 @@ section {
 }
 .text {
     margin: 20px;
-    padding-bottom: 100px;
     flex-flow: inherit;
     font-family: 'Staatliches';
     color:black;
@@ -57,7 +56,7 @@ section {
     font-size: 40px;
     font-weight: bold;
 }
-    .text p{
+    .text h3{
         margin: 20px;
         flex-flow: inherit;
         font-family: 'Staatliches';

@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
 
 .root{
-  background-image: url(../../public/content/fundo.png);
-  background-size: cover;
+    background-image: url(../../public/content/fundo.png);
+    background-size: cover;
 }
 
 .root h1 {
+    margin: auto;
     font-size: 40px;
     color: black;
     text-align: center;
     font-family: 'Staatliches';
-    margin: auto;
 }
 
 .root h2 {
